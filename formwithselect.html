@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>An HTML form with chechboxes </title>
+</head>
+<body>
+<form method = "post" action = "send_formwithcb.php">
+<p>
+	<label for = "user">Name:</label><br/>
+	<input type = "text" id = "user" name = "user">
+</p>
+<fieldset><legend>select some products:</legend><br/>
+<input type = "checkbox" id = "tricorder"
+	name = "products[]" value = "Tricorder">
+	<label for = "tricorder">Tricorder</label><br/>
+
+<input type = "checkbox" id = "ORAC_AI"
+    name = "products[]" value = "ORAC_AI">
+	<label for = "ORAC_AI">ORAC_AI</label><br/>
+</fieldset>
+<button type = "submit" name = "submit" value = "Send">Send Mesage</button>
+</form>
+</body>
+</html>
